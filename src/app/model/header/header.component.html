@@ -1,0 +1,62 @@
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <a class="logo" routerLink="/">
+          <img src="../../../assets/img/logo.png" class="img-fluid" alt="Лучшая компания">
+        </a>
+      </div>
+      <div class="col-md-9 d-none d-md-block">
+        <div class="h-widget d-flex">
+          <div class="hw-c">
+            <div class="icon"><i class="fa fa-phone"></i></div>
+            <div class="h-cont"> <span>Наш телефон </span><br><a href="tel:+77777777777">+7 (777) 777-77-77</a></div>
+          </div>
+          <div class="hw-c">
+            <div class="icon"><i class="fa fa-envelope-o"></i></div>
+            <div class="h-cont"> <span>E-mail </span><br><a href="mailto:info@test.ru">info@test.ru</a></div>
+          </div>
+          <div class="hw-c">
+            <div class="icon"><i class="fa fa-map-marker"></i></div>
+            <div class="h-cont"><span>Адрес </span><br><span>г. Москва</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="main-nav">
+    <div class="container">
+          <nav class="navbar navbar-dark bg-dark navbar-expand-md bg-faded justify-content-center">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                  <ul class="navbar-nav w-100 justify-content-center">
+                      <li class="nav-item">
+                          <a class="nav-link" routerLink="service" routerLinkActive="active">Сервисы</a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" routerLink="project" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLinkActive="active">
+                          Проекты
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#">Web проекты</a>
+                          <a class="dropdown-item" href="#">Mobile проекты</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" routerLink="about" routerLinkActive="active">О компании</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" routerLink="team" routerLinkActive="active">Команда</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" routerLink="contact" routerLinkActive="active">Контакты</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+  </div>
+</header>

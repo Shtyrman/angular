@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Threefold dashboard</h1>         
+        </div>
+        <div class="col-12">
+            <p>
+                Lorem ipsum dolor sit amet, zril dicant mollis sed in, nibh laoreet repudiare at sed. Cu eum laudem nostrum voluptatum, exerci soleat platonem ne cum. Dicta iudico admodum ex ius. His te ferri facer pericula, pro an saepe tempor, usu liber sententiae ad. Te sed putent delectus definitionem, sit ceteros forensibus ea.
+                Qui te purto utamur, ex his tale accumsan expetendis, illud imperdiet dissentias ex vix. Sit timeam latine apeirian et. Sed quodsi reprehendunt cu, eu est vocibus corrumpit vituperata, sea nobis dicunt te. Esse ludus eu mei, in tritani oblique vix, ut quo omnes nusquam. Ei pro similique omittantur. Consetetur dissentias no qui.
+                <br>
+                Lorem ipsum dolor sit amet:
+            </p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                </ul>                               
+            <p>
+                Quo cu suscipit sensibus, his graecis principes voluptatibus no, nam agam detracto constituto an. In tacimates conceptam forensibus sit, eos et iudicabit ullamcorper. Antiopam platonem in mei, id clita cetero nec, in euismod accusata honestatis eum. Sed quas numquam imperdiet ut.
+            </p>
+            <p>
+                Regione hendrerit eos id, ne eum iuvaret hendrerit, posse electram dissentiunt vim eu. His elit pericula at. Vide rebum lucilius ne sea, veri instructior cu pri. Ad debet qualisque complectitur eos, legimus maluisset tincidunt nec ea. Decore numquam nusquam pri te, fierent eloquentiam mei ad.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 py-1 ml-auto mr-auto">
+            <button class="btn btn-outline-primary mx-1" (click)="changeCategory()">
+                Все
+            </button>
+            <button *ngFor="let cat of categories" class="btn btn-outline-primary mx-1"
+                    [class.active]="cat == selectedCategory" (click)="changeCategory(cat)">
+                {{ cat }}    
+            </button>
+        </div>
+        <div class="col-12">
+            <div class="card-columns">
+                <div *ngFor="let image of images" class="card">
+                        <img class="card-img-top" [src]="image.url" [alt]="image.name" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
